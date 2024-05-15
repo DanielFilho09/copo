@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+
+}
+
+.copo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #fff;
+    width: 150px;
+    height: 180px;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 2px solid transparent;
+    box-shadow: 0 0 0 5px #fff, 0 20px 35px rgba(0,0,0,1);
+    background: url('../img/wave.svg');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    animation: copo 5s linear infinite;
+    background-size: 600px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      border: 6px solid #fff;
+      right: 50px;
+      top: -38px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color:rgba(36, 55, 105, 0.945);
+    }
+    
+}
+
+@keyframes copo {
+    50% {
+      background-position: 0 100px;
+    }
+}
+
+h1{
+  font-style: normal;
+  color: #fff;
+  text-align-last: center;
+}
